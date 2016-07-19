@@ -1,0 +1,59 @@
+!!!
+%html
+  %head
+    %title Openbox
+    %meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+    %link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet")
+    %script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
+
+  %body(style="padding-top: 50px")
+    %nav.navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          #navbar.navbar-collapse.collapse.navbar-left
+            %img(src="./images/ob3-logo.png" href="#")
+        #navbar.navbar-collapse.collapse.navbar-right
+          %ul.nav.navbar-nav.navbar-right
+            %li
+              %a(href="#") Features
+            %li
+              %a(href="#") Screenshots
+            %li
+              %a(href="#") GitHub
+
+    .jumbotron(style="background:url(./images/code.jpg) center no-repeat; background-size: cover")
+      .container.center
+        %h1(style="color:white") Openbox
+        %p.lead.text-muted An open-source, lightweight, highly-customizable window manager for X
+        %a.btn.btn-warning.btn-lg Why Openbox?
+        %a.btn.btn-default.btn-lg See screenshots
+        %p
+
+    .row
+      .container.text-center
+        .col-md-5
+          %h2 Install with one command
+          %p You can install Openbox with one command. Paste at a Terminal prompt:
+        .col-md-7.text-left
+          %h2
+          %p Ubuntu 16.04~
+          %code sudo apt install openbox
+          %p Debian and Ubuntu ~15.10
+          %code sudo apt-get install openbox
+          %p Fedora
+          %code sudo yum install openbox
+      %p
+
+
+    .row.bg-info
+      .container
+        .col-md-5
+          %img(src="./images/term.png" style="width:100%")
+        .col-md-7
+          %h2.text-center Extremely light
+          %p
+            Openbox is lightweight. It uses memory less than 100MB.
+            Instead of abusing 3D effect, GUI configuration, Clear-look theme,
+            You can use your PC more productively.
+
+
