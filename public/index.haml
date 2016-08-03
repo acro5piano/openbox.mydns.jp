@@ -7,7 +7,7 @@
     %script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
 
   %body(style="padding-top: 50px")
-    %nav.navbar.navbar-default.navbar-fixed-top
+    %nav.navbar.navbar-inverse.navbar-fixed-top
       .container
         .navbar-header
           #navbar.navbar-collapse.collapse.navbar-left
@@ -21,9 +21,9 @@
             %li
               %a(href="#") GitHub
 
-    .jumbotron(style="background:url(./images/code.jpg) center no-repeat; background-size: cover")
+    .jumbotron(style="/*background:url(./images/code.jpg)*/ center no-repeat; background-size: cover")
       .container.center
-        %h1(style="color:white") Openbox
+        %h1(style="color:#333") Openbox
         %p.lead.text-muted An open-source, lightweight, highly-customizable window manager for X
         %a.btn.btn-warning.btn-lg Why Openbox?
         %a.btn.btn-default.btn-lg See screenshots
@@ -36,14 +36,10 @@
           %p You can install Openbox with one command. Paste at a Terminal prompt:
         .col-md-7.text-left
           %h2
-          %p Ubuntu 16.04~
-          %code sudo apt install openbox
-          %p Debian and Ubuntu ~15.10
+          %p Debian or Ubuntu
           %code sudo apt-get install openbox
           %p Fedora
           %code sudo yum install openbox
-      %p
-
 
     .row.bg-info
       .container
